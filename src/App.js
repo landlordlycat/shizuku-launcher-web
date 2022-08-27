@@ -800,6 +800,7 @@ function App() {
         <FormControl sx={{ m: 1, width: 0.9, maxWidth: 600 }} variant="standard">
           <TextField label="Access Key ID" variant="outlined" size="small" onChange={(e) => {
             setAki(e.target.value);
+            setIsCheckedInstances(false);
           }} />
         </FormControl>
       </div>
@@ -807,6 +808,7 @@ function App() {
         <FormControl sx={{ m: 1, width: 0.9, maxWidth: 600 }}>
           <TextField label="Secret Access Key ID" variant="outlined" size="small" onChange={(e) => {
             setSaki(e.target.value);
+            setIsCheckedInstances(false);
           }} />
         </FormControl>
       </div>
